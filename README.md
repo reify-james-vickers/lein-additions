@@ -5,6 +5,18 @@ Additions to lein config for debugging, development experience, etc.
 
 This file can be placed under you `~/.lein` directory (create if doesn't exist) to customize leiningen behavior.  You can also merge the contents of this one with yours.
 
+The stuff like `:bengal` and `:bengal-dev` are of course specific to [Bengal](hub.com/reifyhealth/bengal).
+
+### Random stuff
+
+`:pedantic? :warn` avoids some errors running some repo's like bengal.
+
+This increases how long `lein repl` will wait, which avoids a timeout error on some projects that take a long time to startup.  Default is 30s so you need something like this if it takes longer than that to start your REPL.
+```
+{:repl-options
+      {:timeout 600000}
+```
+
 ### :plugins
 
 #### lein-pprint
