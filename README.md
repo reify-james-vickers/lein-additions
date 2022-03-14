@@ -3,7 +3,7 @@ Additions to lein config for debugging, development experience, etc.
 
 ## profiles.clj
 
-This file can be placed under you `~/.lein` directory (create if doesn't exist) to customize leiningen behavior.  You can also merge the contents of this one with yours.
+This file can be placed under you `~/.lein` directory (create if doesn't exist) to customize leiningen behavior.  You can also merge the contents of this one with your `~/.lein/profiles.clj` as you like to get just some parts of this customization.
 
 The stuff like `:bengal` and `:bengal-dev` are of course specific to [Bengal](hub.com/reifyhealth/bengal).
 
@@ -26,8 +26,6 @@ Allows you to run `lein pprint` which gives some info about your lein setup, use
 ### :injections
 
 The overall strategy in this file for `:injections` is to use the lucid library to 'inject' some symbols to be included in `clojure.core`, which makes these symbols/functions always available since that namespace is always loaded (without this injection, these include's might be lost when you load a namespace, for example).
-
-Individual customizations are described below.
 
 #### [hashp](https://github.com/weavejester/hashp) - quick way to print values at runtime
 
