@@ -5,7 +5,7 @@ Additions to lein config for debugging, development experience, etc.
 
 This file can be placed under you `~/.lein` directory (create if doesn't exist) to customize leiningen behavior.  You can also merge the contents of this one with your `~/.lein/profiles.clj` as you like to get just some parts of this customization.
 
-The stuff like `:bengal` and `:bengal-dev` are of course specific to [Bengal](hub.com/reifyhealth/bengal).
+The stuff like `:bengal` and `:bengal-dev` are of course specific to the Bengal project.
 
 ### Random stuff
 
