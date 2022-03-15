@@ -17,7 +17,6 @@
                    [vvvvalvalval/scope-capture "0.3.2"]
                    [org.clojure/tools.trace "0.7.11"]
                    [im.chit/lucid.core.inject "1.3.13" :exclusions [rewrite-clj]]
-                   [inspector-jay "0.3"]
                    [org.clojure/core.incubator "0.1.4"]]
     :injections [(require 'hashp.core)
                  (require '[lucid.core.inject :as inj])
