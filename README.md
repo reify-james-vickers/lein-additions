@@ -1,6 +1,8 @@
 # lein-additions
 Additions to lein config for debugging, development experience, etc.
 
+Other code in the repo has usage examples of some of the libraries brought in by `profiles.clj`.
+
 ## profiles.clj
 
 This file can be placed under you `~/.lein` directory (create if doesn't exist) to customize leiningen behavior.  You can also merge the contents of this one with your `~/.lein/profiles.clj` as you like to get just some parts of this customization.
