@@ -29,7 +29,7 @@ The overall strategy in this file for `:injections` is to use the lucid library 
 
 #### [hashp](https://github.com/weavejester/hashp) - quick way to print values at runtime
 
-This setup adds a reader macro so you can print forms by putting `#p` before them, e.g. `(+ #p x 5)` will print the current value of `x` when evaluated.  Primitive but quick way of outputting some values, prints the form and the evaluation of it; another nice thing is you don't have to wrap the form in another function call to use it.
+This setup adds a reader macro so you can print forms by putting `#p` before them, e.g. `(+ #p x 5)` will print the current value of `x` when evaluated.  Primitive but quick way of outputting some values, prints the form and the evaluation of it; another nice thing is you don't have to wrap the form in another function call to use it.  It gives colored output which is easier to find when there's a lot of noise e.g. Bengal test suite.
 
 #### [debux](https://github.com/philoskim/debux) - print and return expressions/forms
 
