@@ -4,5 +4,4 @@
 
 (deftest a-test
   (is (= 25 (square 5)))
-  ; fails
-  (is (= 3 (square 2))))
+  (is (= 4 (square 2))))
