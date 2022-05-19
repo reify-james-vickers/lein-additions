@@ -70,10 +70,6 @@ Similar purpose to debux and hashp, but has some different functionality: `trace
 
 Sort of the REPL-driven alternative to libraries like hashp and debux.  Haven't used this much.
 
-#### [scope capture](https://github.com/vvvvalvalval/scope-capture) - log, capture and recreate enclosing scopes
-
-I haven't used this much.
-
 #### string interpolation (from [org.clojure/core.incubator](https://github.com/clojure/core.incubator))
 
 This allows you to do string interpolation in clojure via `<<`, something I wish was built-in.  Note this will only work for you so don't use it in production code (only for your debugging purposes) unless it's part of e.g. `project.clj`.
