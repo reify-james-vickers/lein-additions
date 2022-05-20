@@ -68,10 +68,6 @@ Note that using `#p` from `hashp` library here instead of `dbg` will only print 
 
 Similar purpose to debux and hashp, but has some different functionality: `trace-ns` can be used to add tracing output to an entire namespace, and `trace-forms` can see which form is failing.
 
-#### [postmortem](https://github.com/athos/Postmortem) - capture and log things
-
-Sort of the REPL-driven alternative to libraries like hashp and debux.  Haven't used this much.
-
 #### string interpolation (from [org.clojure/core.incubator](https://github.com/clojure/core.incubator))
 
 This allows you to do string interpolation in clojure via `<<`, something I wish was built-in.  Note this will only work for you so don't use it in production code (only for your debugging purposes) unless it's part of e.g. `project.clj`.
