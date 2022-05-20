@@ -12,14 +12,12 @@
     :eval-in :subprocess
     :plugins [[lein-pprint "1.3.2"]]
     :dependencies [[hashp "0.2.1" :exclusions [org.clojure/tools.reader]]
-                   [postmortem "0.5.0"]
                    [philoskim/debux "0.8.2" :exclusions [args4j]]
                    [org.clojure/tools.trace "0.7.11"]
                    [im.chit/lucid.core.inject "1.3.13" :exclusions [rewrite-clj]]
                    [org.clojure/core.incubator "0.1.4"]]
     :injections [(require 'hashp.core)
                  (require '[lucid.core.inject :as inj])
-                 (require '[postmortem.core :as pm])
                  (inj/in
                   clojure.core
                   [debux.core dbg dbgn dbgt set-debug-mode! set-ns-whitelist! set-ns-blacklist!]
