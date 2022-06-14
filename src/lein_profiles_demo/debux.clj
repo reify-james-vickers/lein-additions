@@ -1,6 +1,5 @@
 (ns lein-profiles-demo.debux)
 
-; debux library
 (comment
 
   ; basic usage of dbg, only shows the final result
