@@ -66,7 +66,7 @@ Note that using `#p` from `hashp` library here instead of `dbg` will only print 
 
 ### [Portal](https://practical.li/clojure-staging/clojure-tools/data-browsers/portal.html) - Interactive UI viewer for clojure data
 
-This setup requires the portal namespace and calls `(portal/tap)` so that anything given to `tap>` goes to Portal as well.  The Portal UI can be shown by calling `(portal/open)`; if you save this value in a var, you can deref it later (via `@` or `deref`) to retrieve the currently selected value in the Portal UI back into the REPL.
+This setup requires the portal namespace and calls `(portal/tap)` so that anything given to `tap>` goes to Portal as well.  The Portal UI can be shown by calling `(portal/open)`; if you save this value in a var, you can deref it later (via `@` or `deref`) to retrieve the currently selected value in the Portal UI back into the REPL.  The setup in this file currently launches a Portal in VS Code (requires Portal extension installed) and def's it as `my-portal` for reference later.
 
 #### [clojure.tools.trace](https://github.com/clojure/tools.trace) - print values at runtime
 
