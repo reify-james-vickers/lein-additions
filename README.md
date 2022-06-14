@@ -64,6 +64,10 @@ dbg: (-> "a b c d" .toUpperCase (.replace "A" "X") (.split " ") first) =>
 
 Note that using `#p` from `hashp` library here instead of `dbg` will only print the final result instead of each intermediate result like `dbg` does for threading macros.  `dbg` also works well for other threading macros like `some->` and `cond->`.
 
+### [Portal](https://practical.li/clojure-staging/clojure-tools/data-browsers/portal.html) - Interactive UI viewer for clojure data
+
+This setup requires the portal namespace and calls `(portal/tap)` so that anything given to `tap>` goes to Portal as well.  The Portal UI can be shown by calling `(portal/open)`; if you save this value in a var, you can deref it later (via `@` or `deref`) to retrieve the currently selected value in the Portal UI back into the REPL.
+
 #### [clojure.tools.trace](https://github.com/clojure/tools.trace) - print values at runtime
 
 Similar purpose to debux and hashp, but has some different functionality: `trace-ns` can be used to add tracing output to an entire namespace, and `trace-forms` can see which form is failing.
