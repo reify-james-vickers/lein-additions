@@ -21,7 +21,7 @@
                  (require '[lucid.core.inject :as inj])
                  (require '[portal.api :as portal])
                  (portal/tap) ; add portal as a tap target
-                 (def my-portal (portal/open {:launcher :vs-code}))
+                 ;(def my-portal (portal/open {:launcher :vs-code}))
                  (inj/in
                   clojure.core
                   [debux.core dbg dbgn dbgt set-debug-mode! set-ns-whitelist! set-ns-blacklist!]
