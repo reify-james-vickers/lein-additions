@@ -20,6 +20,11 @@
     :injections [(require 'hashp.core)
                  (require '[lucid.core.inject :as inj])
                  (require '[portal.api :as portal])
+                 ; redefine tap> to return the tap'd value
+                 (alter-var-root #'clojure.core/tap>
+                    (fn [orig]
+                      (fn [x]
+                        (doto x orig))))
                  (portal/tap) ; add portal as a tap target
                  ;(def my-portal (portal/open {:launcher :vs-code}))
                  (inj/in
