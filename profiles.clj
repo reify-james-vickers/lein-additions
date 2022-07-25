@@ -5,7 +5,16 @@
  :bengal {:plugins [[cider/cider-nrepl "0.25.5"]
                     [refactor-nrepl "2.5.1" :exclusions [nrepl]]]}
  :user
-   {:repl-options
+   {
+    ; avoid issues with bengal repl's causing this error
+    ; assertion failed: unimplemented state recovery for REP CMPS/SCAS
+    ; (StateRecovery.cpp:573 determine_state_recovery_action)
+    ; Subprocess failed (exit code: 133)
+    :java-agents ^:replace []
+                   :jvm-opts ^:replace ["-Dclojure.spec.check-asserts=true"
+                                        "-Duser.timezone=UTC"
+                                        "-Dotel.instrumentation.common.db-statement-sanitizer.enabled=false"]
+    :repl-options
       {:timeout 600000}
     :pedantic? :warn
     ; not sure what this does but fixes: syntax errors compiling fipp/ednize.clj:1
